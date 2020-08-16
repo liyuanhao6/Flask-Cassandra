@@ -1,0 +1,6 @@
+numpy==1.16.0
+tensorflow
+flask
+pillow
+cassandra-driver
+setuptools==41.0.0
