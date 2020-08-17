@@ -1,8 +1,12 @@
+import os
+
 import numpy as np
 import tensorflow as tf
 from PIL import Image
 
-model = tf.keras.models.load_model('my_model.h5')
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+my_file = os.path.join(THIS_FOLDER + '/data', 'my_model.h5')
+model = tf.keras.models.load_model(my_file)
 
 
 def process(image):
