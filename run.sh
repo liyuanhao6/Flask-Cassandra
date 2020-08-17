@@ -24,9 +24,7 @@ flask-app
 
 # Common commands:
 POST
-curl -X POST -F 'image=@0.jpeg' -v http://127.0.0.1:8080/api/tasks/upload
-curl -X POST -F 'image=@3.jpeg' -v http://127.0.0.1:8080/api/tasks/upload
-curl -X POST -F 'image=@5.jpeg' -v http://127.0.0.1:8080/api/tasks/upload
+curl -X POST -F 'image=@<image_path>' -v http://127.0.0.1:8080/api/tasks/upload
 GET ALL
 curl -X GET http://127.0.0.1:8080/api/tasks
 GET

@@ -59,31 +59,3 @@ def upload_image():
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
-
-
-'''
-
-* Trying 127.0.0.1...
-* TCP_NODELAY set
-* Connected to 127.0.0.1 (127.0.0.1) port 8080 (#0)
-> POST /api/tasks/upload HTTP/1.1
-> Host: 127.0.0.1:8080
-> User-Agent: curl/7.64.1
-> Accept: */*
-> Content-Length: 7334
-> Content-Type: multipart/form-data; boundary=------------------------934af8e5dad05416
-> Expect: 100-continue
->
-< HTTP/1.1 100 Continue
-* We are completely uploaded and fine
-* HTTP 1.0, assume close after body
-< HTTP/1.0 200 OK
-< Content-Type: text/html; charset=utf-8
-< Content-Length: 3
-< Server: Werkzeug/1.0.0 Python/3.7.1
-< Date: Mon, 17 Aug 2020 07:33:09 GMT
-<
-* Closing connection 0
-Bag
-
-'''
