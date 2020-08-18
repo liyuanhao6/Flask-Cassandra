@@ -10,7 +10,7 @@ log.addHandler(handler)
 
 KEYSPACE = "images"
 cluster = Cluster(
-    contact_points=['127.0.0.1'],
+    contact_points=['172.18.0.2'],  # 需要与Docker网桥中Cassandra的ip地址一致
     port=9042,
 )
 session = cluster.connect()

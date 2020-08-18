@@ -5,4 +5,5 @@ WORKDIR /app
 RUN curl https://bootstrap.pypa.io/get-pip.py | python
 RUN pip install -r requirements.txt
 EXPOSE 8080 9042
-CMD ["python", "app.py"]
+CMD ["/bin/bash"]
+# CMD ["python", "app.py"]
