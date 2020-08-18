@@ -16,7 +16,7 @@ cassandra:latest
 # Build flask image
 docker build -t flask-app .
 # Run the flask server
-docker run -d --name my-flask \
+docker run -it --name my-flask \
 -v ~/docker/data/flask:/app/data \
 -p 8080:8080 \
 --network my-net \
